@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akshat Saini | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="particles"></canvas>
+
+<nav>
+  <div class="logo">
+  <span class="logo-mark">ASR</span>
+</div>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-card">
+    <h1 class="hero-title">Akshat Saini</h1>
+    <p id="typing"></p>
+
+    <p class="hero-desc">
+      AI-focused software developer building intelligent systems
+      using machine learning, computer vision, mobile applications,
+      and cloud-connected software solutions.
+    </p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About</h2>
+
+  <p>
+    I am a Computer Science Engineering student with a strong interest in
+    Artificial Intelligence, Machine Learning, and Software Development.
+    I enjoy building practical systems that combine programming, data,
+    and real-world applications.
+  </p>
+
+  <p>
+    My work spans multiple domains including machine learning model
+    development, computer vision systems, web application deployment,
+    and Android application development. I focus on building complete
+    end-to-end systems — from problem understanding and dataset research
+    to model training, deployment, and user interaction.
+  </p>
+
+  <p>
+    Over time, my projects have evolved from individual ML models into
+    multi-module intelligent systems such as ATOA, which combines mobile
+    computing, cloud communication, and AI-based detection systems.
+  </p>
+
+  <p>
+    I am particularly interested in building AI systems that solve real
+    societal problems, especially in areas like road safety, automation,
+    and intelligent transportation systems.
+  </p>
+</section>
+
+<section id="projects" class="section">
+  <h2>Featured Projects</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openProject('flight')">
+      <h3>Flight Price Predictor</h3>
+      <p>
+        Machine learning web application for airline price prediction
+        using regression modeling and Flask deployment.
+      </p>
+    </div>
+
+    <div class="card" onclick="openProject('minor')">
+      <h3>Traffic Optimizer & Assistant</h3>
+      <p>
+        AI traffic sign recognition system with simulation module
+        and real-time voice alert interface.
+      </p>
+    </div>
+
+    <div class="card" onclick="openProject('major')">
+      <h3>Advanced ATOA System</h3>
+      <p>
+        Multi-platform AI driver assistance system combining
+        detection, alerts, and Android ML inference.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills & Technologies</h2>
+
+  <div class="sphere-wrapper">
+
+    <div class="core">
+      <div class="core-glow"></div>
+      <span>TECH STACK</span>
+    </div>
+
+    <div class="orbit-node n1"><i class="fab fa-python"></i> Python</div>
+    <div class="orbit-node n2"><i class="fas fa-brain"></i> AI</div>
+    <div class="orbit-node n3"><i class="fas fa-robot"></i> ML</div>
+    <div class="orbit-node n4"><i class="fas fa-fire"></i> Firebase</div>
+    <div class="orbit-node n5"><i class="fab fa-github"></i> GitHub</div>
+    <div class="orbit-node n6"><i class="fas fa-cloud"></i> HuggingFace</div>
+    <div class="orbit-node n7"><i class="fas fa-mobile-alt"></i> Kotlin</div>
+    <div class="orbit-node n8"><i class="fas fa-code"></i> Flask</div>
+    <div class="orbit-node n9"><i class="fas fa-stream"></i> Streamlit</div>
+    <div class="orbit-node n10"><i class="fas fa-server"></i> Netlify</div>
+
+  </div>
+</section>
+
+
+
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <div class="contact-card">
+    <p class="contact-email">itsasr777@gmail.com</p>
+
+    <div class="contact-buttons">
+      <a class="contact-btn" target="_blank"
+         href="https://github.com/asr7code">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+
+      <a class="contact-btn" target="_blank"
+         href="https://www.linkedin.com/in/akshat-saini-81121b361">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 Akshat Saini
+</footer>
+
+
+<div id="projectModal" class="modal">
+  <div class="modal-content" id="projectContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
